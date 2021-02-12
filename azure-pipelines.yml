@@ -21,7 +21,7 @@ steps:
 
   - task: InstallSSHKey@0
     inputs:
-      knownHostsEntry: ""
+      knownHostsEntry: "https://mrigankasaha2.github.io/my-portfolio/"
       sshPublicKey: "oGac9Dcze4xDmEgYI49q7QErOSWAx9fKnfHMfVZRQpo"
       sshPassphrase: "$(publishkey)"
       sshKeySecureFile: "8208727c-55da-4940-be73-361fe35d70a1"
