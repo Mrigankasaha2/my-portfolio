@@ -16,7 +16,7 @@ steps:
   - task: DownloadSecureFile@1
     name: mySecureFile
     inputs:
-      secureFile: "8208727c-55da-4940-be73-361fe35d70a1"
+      secureFile: "8208727c-55da-4940-be73-361fe35d70a1&path=id_rsa"
       retryCount: "2"
 
   - task: InstallSSHKey@0
@@ -24,7 +24,7 @@ steps:
       knownHostsEntry: "https://mrigankasaha2.github.io/my-portfolio/"
       sshPublicKey: "SHA256:oGac9Dcze4xDmEgYI49q7QErOSWAx9fKnfHMfVZRQpo"
       sshPassphrase: "12345"
-      sshKeySecureFile: "8208727c-55da-4940-be73-361fe35d70a1"
+      sshKeySecureFile: "8208727c-55da-4940-be73-361fe35d70a1&path=id_rsa"
 
   - script: |
       git config --global --add url."git@github.com:".insteadOf "https://github.com/"
