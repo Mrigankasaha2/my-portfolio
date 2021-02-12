@@ -24,7 +24,7 @@ steps:
       knownHostsEntry: ""
       sshPublicKey: "oGac9Dcze4xDmEgYI49q7QErOSWAx9fKnfHMfVZRQpo"
       sshPassphrase: "$(PUBLISHPASS)"
-      sshKeySecureFile: "8208727c-55da-4940-be73-361fe35d70a1&path=id_rsa"
+      sshKeySecureFile: "8208727c-55da-4940-be73-361fe35d70a1"
 
   - script: |
       git config --global --add url."git@github.com:".insteadOf "https://github.com/"
