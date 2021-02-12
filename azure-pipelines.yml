@@ -1,8 +1,3 @@
-# Node.js with Angular
-# Build a Node.js project that uses Angular.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
 variables:
   PUBLISHPASS: $(PUBLISHKEY)
 
@@ -33,8 +28,8 @@ steps:
 
   - script: |
       git config --global --add url."git@github.com:".insteadOf "https://github.com/"
-      git config --local user.email "<mrigankasaha2@gmail.com>"
-      git config --local user.name "Mrigankasaha2"
+      git config --local user.email "<mymail@domain.com>"
+      git config --local user.name "<username>"
       npm install --no-audit --progress=false      
       npm run deploy
     displayName: "npm install and deploy"
