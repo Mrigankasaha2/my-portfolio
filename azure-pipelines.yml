@@ -21,10 +21,10 @@ steps:
 
   - task: InstallSSHKey@0
     inputs:
-      knownHostsEntry: "https://mrigankasaha2.github.io/my-portfolio/"
+      knownHostsEntry: ""
       sshPublicKey: "oGac9Dcze4xDmEgYI49q7QErOSWAx9fKnfHMfVZRQpo"
       sshPassphrase: "$(PUBLISHPASS)"
-      sshKeySecureFile: "mySecureFile"
+      sshKeySecureFile: "8208727c-55da-4940-be73-361fe35d70a1"
 
   - script: |
       git config --global --add url."git@github.com:".insteadOf "https://github.com/"
