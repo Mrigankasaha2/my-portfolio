@@ -23,7 +23,7 @@ steps:
     inputs:
       knownHostsEntry: ""
       sshPublicKey: "oGac9Dcze4xDmEgYI49q7QErOSWAx9fKnfHMfVZRQpo"
-      sshPassphrase: "$(PUBLISHPASS)"
+      sshPassphrase: "$(publishkey)"
       sshKeySecureFile: "8208727c-55da-4940-be73-361fe35d70a1"
 
   - script: |
