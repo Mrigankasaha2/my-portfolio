@@ -23,8 +23,8 @@ steps:
     inputs:
       knownHostsEntry: "https://mrigankasaha2.github.io/my-portfolio/"
       sshPublicKey: "oGac9Dcze4xDmEgYI49q7QErOSWAx9fKnfHMfVZRQpo"
-      sshPassphrase: "12345"
-      sshKeySecureFile: "8208727c-55da-4940-be73-361fe35d70a1"
+      sshPassphrase: "$(PUBLISHPASS)"
+      sshKeySecureFile: "mySecureFile"
 
   - script: |
       git config --global --add url."git@github.com:".insteadOf "https://github.com/"
