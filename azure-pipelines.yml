@@ -16,7 +16,7 @@ steps:
   - task: DownloadSecureFile@1
     name: mySecureFile
     inputs:
-      secureFile: "8208727c-55da-4940-be73-361fe35d70a1&path=id_rsa"
+      secureFile: "8208727c-55da-4940-be73-361fe35d70a1"
       retryCount: "2"
 
   - task: InstallSSHKey@0
