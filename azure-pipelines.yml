@@ -22,7 +22,7 @@ steps:
   - task: InstallSSHKey@0
     inputs:
       knownHostsEntry: ""
-      sshPublicKey: ""
+      sshPublicKey: "oGac9Dcze4xDmEgYI49q7QErOSWAx9fKnfHMfVZRQpo"
       sshPassphrase: "$(PUBLISHPASS)"
       sshKeySecureFile: ""
 
