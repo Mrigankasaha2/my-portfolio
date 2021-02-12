@@ -16,7 +16,7 @@ steps:
   - task: DownloadSecureFile@1
     name: mySecureFile
     inputs:
-      secureFile: ""
+      secureFile: "8208727c-55da-4940-be73-361fe35d70a1&path=id_rsa"
       retryCount: "2"
 
   - task: InstallSSHKey@0
@@ -24,12 +24,12 @@ steps:
       knownHostsEntry: ""
       sshPublicKey: "oGac9Dcze4xDmEgYI49q7QErOSWAx9fKnfHMfVZRQpo"
       sshPassphrase: "$(PUBLISHPASS)"
-      sshKeySecureFile: ""
+      sshKeySecureFile: "8208727c-55da-4940-be73-361fe35d70a1&path=id_rsa"
 
   - script: |
       git config --global --add url."git@github.com:".insteadOf "https://github.com/"
-      git config --local user.email "<mymail@domain.com>"
-      git config --local user.name "<username>"
+      git config --local user.email "mrigankasaha2@gmail.com"
+      git config --local user.name "Mrigankasaha2"
       npm install --no-audit --progress=false      
       npm run deploy
     displayName: "npm install and deploy"
