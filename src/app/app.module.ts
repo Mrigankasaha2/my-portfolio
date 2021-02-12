@@ -10,9 +10,17 @@ import { MainbodyComponent } from './Views/mainbody/mainbody.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { HomeComponent } from './Views/home/home.component';
+import { AppContainerComponent } from './Views/app-container/app-container.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, MainbodyComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    MainbodyComponent,
+    HomeComponent,
+    AppContainerComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
