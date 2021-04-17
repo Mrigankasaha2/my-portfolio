@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+displayconponent = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  DisplayDetails()
+  {
+    this.displayconponent = true;
   }
 
 }

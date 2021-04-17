@@ -14,3 +14,29 @@ button {
 .message {
   font-size: xx-large;
 }
+.my-card {
+  max-width: 400px;
+  margin: 10px;
+  background: transparent;
+  color: white;
+}
+mat-card-subtitle {
+  color: #a9a9a9;
+}
+
+.cardgroup {
+  margin: 20px auto;
+  display: flex;
+}
+.spanheader {
+  display: grid;
+  place-items: center;
+  color: white;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cardgroup {
+    display: grid;
+  }
+}

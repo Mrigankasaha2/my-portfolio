@@ -3,4 +3,58 @@
   <span class="message">Welcome To My Page</span>
 </h1>
 <br />
-<button mat-raised-button>Contact</button>
+<button mat-raised-button (click)="DisplayDetails()">Details</button>
+
+<div *ngIf="displayconponent">
+  <span class="spanheader">Technical Skills</span>
+  <div class="cardgroup">
+    <mat-card class="my-card">
+      <mat-card-header>
+        <mat-card-title style="color: #e25a42;">Front End</mat-card-title>
+        <mat-card-subtitle>Angular, Javascript, Typescript</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Have a 3 years of experience in Froent End Technologies like HTML, CSS, Jquery, Javascript, Bootstrap
+          1 year handson experience in Angular
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="my-card">
+      <mat-card-header>
+        <mat-card-title style="color: #6f42c1">Back End</mat-card-title>
+        <mat-card-subtitle>C#, .NET Core</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          3 years+ experience in .NET Core.
+          Have developed many API, MVC, Windows Services, Worker Services, Azure Webjobs, Azure Function App
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="my-card">
+      <mat-card-header>
+        <mat-card-title style="color: #fc3;">Database</mat-card-title>
+        <mat-card-subtitle>SQL Server</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Have 4 years experience in SQL.
+          Developed and Designed many databses for verious B2B applications. Worked on SSIS also.
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="my-card">
+      <mat-card-header>
+        <mat-card-title style="color: #0078d4;">Cloud</mat-card-title>
+        <mat-card-subtitle>Azure</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Microsoft Certified Azure Developer.
+          2 years+ experience in Azure solution development including Azure Web App, Function App, Web Jobs, Azure DAta Factory, Storage Accounts.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
