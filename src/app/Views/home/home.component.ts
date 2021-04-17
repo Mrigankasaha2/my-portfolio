@@ -1,19 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 
+export interface PeriodicElement {
+  examination: string;
+  school: string;
+  year: number;
+  board: string;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {school: 'Heritage Institute Of Technology', examination: 'B.Tech (Electronics &Communications Engineering)', year: 2017, board: 'West Bengal University of Technology (W.B.U.T)'},
+  {school: 'Birati High School', examination: 'Higher Secondary', year: 2013, board: 'West Bengal Council of Higher Secondary Education'},
+  {school: 'Birati High School', examination: 'Secondary', year: 2011, board: 'West Bengal Council of Secondary Education'},
+];
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-displayconponent = false;
+displaycomponent = false;
+displayedColumns: string[] = ['examination', 'school', 'board', 'year'];
+dataSource = ELEMENT_DATA
   constructor() { }
 
   ngOnInit(): void {
   }
   DisplayDetails()
   {
-    this.displayconponent = true;
+    this.displaycomponent = !this.displaycomponent
   }
 
 }

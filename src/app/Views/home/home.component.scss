@@ -10,6 +10,7 @@ button {
   background-color: #2979ff;
   border-radius: 2em;
   width: 150px;
+  color: white;
 }
 .message {
   font-size: xx-large;
@@ -34,9 +35,25 @@ mat-card-subtitle {
   color: white;
   margin-top: 30px;
 }
+table {
+  width: 100%;
+  background: transparent;
+  margin-top: 30px;
+}
+.mat-header-cell {
+  color: #eeeeee;
+  background: #2979ff;
+}
+.mat-cell,
+.mat-footer-cell {
+  color: #eeeeee;
+}
 
 @media only screen and (max-width: 600px) {
   .cardgroup {
     display: grid;
+  }
+  button {
+    width: 100%;
   }
 }

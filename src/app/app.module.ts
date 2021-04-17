@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './Views/home/home.component';
 import { FooterComponent } from './Views/footer/footer.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FooterComponent } from './Views/footer/footer.component';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
