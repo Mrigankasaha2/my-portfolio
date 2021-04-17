@@ -9,7 +9,7 @@ h1 {
 button {
   background-color: #2979ff;
   border-radius: 2em;
-  width: 150px;
+  width: 200px;
   color: white;
 }
 .message {
@@ -47,6 +47,12 @@ table {
 .mat-cell,
 .mat-footer-cell {
   color: #eeeeee;
+  font-size: 12px;
+}
+.contactsheet {
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
 }
 
 @media only screen and (max-width: 600px) {

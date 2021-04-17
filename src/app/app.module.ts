@@ -11,13 +11,21 @@ import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './Views/home/home.component';
 import { FooterComponent } from './Views/footer/footer.component';
 import { MatTableModule } from '@angular/material/table';
+import { ContactsComponent } from './Views/contacts/contacts.component';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { AboutmeComponent } from './Views/aboutme/aboutme.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    ContactsComponent,
+    AboutmeComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +36,10 @@ import { MatTableModule } from '@angular/material/table';
     MatButtonModule,
     MatCardModule,
     MatTableModule,
+    MatBottomSheetModule,
+    MatSidenavModule,
+    MatListModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
