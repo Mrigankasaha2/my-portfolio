@@ -4,12 +4,13 @@ import { HomeComponent } from './Views/home/home.component';
 
 const routes: Routes = [
   {
-    path: '', component: HomeComponent
-  }
+    path: '',
+    component: HomeComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

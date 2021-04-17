@@ -6,20 +6,23 @@
 <button mat-raised-button (click)="DisplayDetails()">Details</button>
 
 <div *ngIf="displaycomponent">
-  <span class="spanheader">
-    <mat-icon aria-hidden="false" aria-label="Example home icon">keyboard</mat-icon>
+  <span class="spanheader mat-subheading-1">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">
+      keyboard
+    </mat-icon>
     Skills
   </span>
   <div class="cardgroup">
     <mat-card class="my-card">
       <mat-card-header>
-        <mat-card-title style="color: #e25a42;">Front End</mat-card-title>
+        <mat-card-title style="color: #e25a42">Front End</mat-card-title>
         <mat-card-subtitle>Angular, Javascript, Typescript</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
         <p>
-          Have a 3 years of experience in Froent End Technologies like HTML, CSS, Jquery, Javascript, Bootstrap
-          1 year handson experience in Angular
+          Have a 3 years of experience in Froent End Technologies like HTML,
+          CSS, Jquery, Javascript, Bootstrap 1 year handson experience in
+          Angular
         </p>
       </mat-card-content>
     </mat-card>
@@ -30,67 +33,82 @@
       </mat-card-header>
       <mat-card-content>
         <p>
-          3 years+ experience in .NET Core.
-          Have developed many API, MVC, Windows Services, Worker Services, Azure Webjobs, Azure Function App
+          3 years+ experience in .NET Core. Have developed many API, MVC,
+          Windows Services, Worker Services, Azure Webjobs, Azure Function App
         </p>
       </mat-card-content>
     </mat-card>
     <mat-card class="my-card">
       <mat-card-header>
-        <mat-card-title style="color: #fc3;">Database</mat-card-title>
+        <mat-card-title style="color: #fc3">Database</mat-card-title>
         <mat-card-subtitle>SQL Server</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
         <p>
-          Have 4 years experience in SQL.
-          Developed and Designed many databses for verious B2B applications. Worked on SSIS also.
+          Have 4 years experience in SQL. Developed and Designed many databses
+          for verious B2B applications. Worked on SSIS also.
         </p>
       </mat-card-content>
     </mat-card>
     <mat-card class="my-card">
       <mat-card-header>
-        <mat-card-title style="color: #0078d4;">Cloud</mat-card-title>
+        <mat-card-title style="color: #0078d4">Cloud</mat-card-title>
         <mat-card-subtitle>Azure</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
         <p>
-          Microsoft Certified Azure Developer.
-          2 years+ experience in Azure solution development including Azure Web App, Function App, Web Jobs, Azure DAta Factory, Storage Accounts.
+          Microsoft Certified Azure Developer. 2 years+ experience in Azure
+          solution development including Azure Web App, Function App, Web Jobs,
+          Azure DAta Factory, Storage Accounts.
         </p>
       </mat-card-content>
     </mat-card>
   </div>
-  <span class="spanheader">
+  <span class="spanheader mat-subheading-1">
     <mat-icon aria-hidden="false" aria-label="Example home icon">book</mat-icon>
     Education
   </span>
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="examination">
-      <th mat-header-cell *matHeaderCellDef> Examination </th>
-      <td mat-cell *matCellDef="let element"> {{element.examination}} </td>
+      <th mat-header-cell *matHeaderCellDef>Examination</th>
+      <td mat-cell *matCellDef="let element">{{ element.examination }}</td>
     </ng-container>
-  
+
     <ng-container matColumnDef="school">
-      <th mat-header-cell *matHeaderCellDef> School </th>
-      <td mat-cell *matCellDef="let element"> {{element.school}} </td>
+      <th mat-header-cell *matHeaderCellDef>School</th>
+      <td mat-cell *matCellDef="let element">{{ element.school }}</td>
     </ng-container>
-  
+
     <ng-container matColumnDef="board">
-      <th mat-header-cell *matHeaderCellDef> Board </th>
-      <td mat-cell *matCellDef="let element"> {{element.board}} </td>
+      <th mat-header-cell *matHeaderCellDef>Board</th>
+      <td mat-cell *matCellDef="let element">{{ element.board }}</td>
     </ng-container>
-  
+
     <ng-container matColumnDef="year">
-      <th mat-header-cell *matHeaderCellDef> Year </th>
-      <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+      <th mat-header-cell *matHeaderCellDef>Year</th>
+      <td mat-cell *matCellDef="let element">{{ element.year }}</td>
     </ng-container>
-  
+
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
   </table>
-  
-  <span class="spanheader">
-    <mat-icon aria-hidden="false" aria-label="Example home icon">perm_phone_msg</mat-icon>
+
+  <span class="spanheader mat-subheading-1">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">
+      perm_phone_msg
+    </mat-icon>
     Contact
   </span>
+  <div class="contactsheet">
+    <button mat-raised-button (click)="OpenContacts()">
+      View Contact Details
+    </button>
+  </div>
+  <span class="spanheader mat-subheading-1">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">
+      insert_comment
+    </mat-icon>
+    About Me
+  </span>
+  <app-aboutme></app-aboutme>
 </div>
