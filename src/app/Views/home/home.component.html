@@ -5,13 +5,14 @@
 <br />
 <button mat-raised-button (click)="DisplayDetails()">Details</button>
 
-<div *ngIf="displaycomponent">
+<div *ngIf="displaycomponent" class="main">
   <span class="spanheader mat-subheading-1">
     <mat-icon aria-hidden="false" aria-label="Example home icon">
       keyboard
     </mat-icon>
     Skills
   </span>
+  <mat-divider class="dividercolour"></mat-divider>
   <div class="cardgroup">
     <mat-card class="my-card">
       <mat-card-header>
@@ -68,6 +69,7 @@
     <mat-icon aria-hidden="false" aria-label="Example home icon">book</mat-icon>
     Education
   </span>
+  <mat-divider class="dividercolour"></mat-divider>
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="examination">
       <th mat-header-cell *matHeaderCellDef>Examination</th>
@@ -99,6 +101,7 @@
     </mat-icon>
     Contact
   </span>
+  <mat-divider class="dividercolour"></mat-divider>
   <div class="contactsheet">
     <button mat-raised-button (click)="OpenContacts()">
       View Contact Details
@@ -110,5 +113,6 @@
     </mat-icon>
     About Me
   </span>
+  <mat-divider class="dividercolour"></mat-divider>
   <app-aboutme></app-aboutme>
 </div>
