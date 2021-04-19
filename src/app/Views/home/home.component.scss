@@ -1,5 +1,7 @@
+@import "../../../styles.scss";
+@import "../navbar/navbar.component.scss";
 h1 {
-  color: white;
+  color: $PrimaryTextColor;
   font-weight: bold;
   font-size: xxx-large;
 }
@@ -19,10 +21,10 @@ button {
   max-width: 400px;
   margin: 10px;
   background: transparent;
-  color: white;
+  color: $PrimaryTextColor;
 }
 mat-card-subtitle {
-  color: #a9a9a9;
+  color: $SecondaryTextColor;
 }
 
 .cardgroup {
@@ -32,7 +34,7 @@ mat-card-subtitle {
 .spanheader {
   display: grid;
   place-items: center;
-  color: white;
+  color: $PrimaryTextColor;
   margin-top: 30px;
 }
 table {
@@ -41,12 +43,12 @@ table {
   margin-top: 30px;
 }
 .mat-header-cell {
-  color: #eeeeee;
+  color: $SecondaryTextColor;
   background: #2979ff;
 }
 .mat-cell,
 .mat-footer-cell {
-  color: #eeeeee;
+  color: $SecondaryTextColor;
   font-size: 12px;
 }
 .contactsheet {
@@ -68,10 +70,7 @@ table {
   }
 }
 ::ng-deep .mat-bottom-sheet-container {
-  background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  @include backgroundgradient($Theme);
 }
 .dividercolour {
   background-color: rgba(202, 193, 193, 0.26);

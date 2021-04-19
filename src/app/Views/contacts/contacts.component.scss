@@ -1,6 +1,7 @@
+@import "../../../styles.scss";
 .listlevel {
-  color: rgb(255, 255, 255);
+  color: $PrimaryTextColor;
 }
 .listdata {
-  color: rgb(134, 134, 134);
+  color: $SecondaryTextColor;
 }
